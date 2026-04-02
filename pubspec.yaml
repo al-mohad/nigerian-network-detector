@@ -1,0 +1,23 @@
+name: nigerian_network_detector
+description: >-
+  A lightweight, zero-dependency Dart package for detecting the mobile network
+  carrier of Nigerian phone numbers. Supports MTN, Airtel, Glo, and 9mobile
+  with automatic format normalisation.
+version: 1.0.0
+homepage: https://github.com/al-mohad/nigerian_network_detector
+repository: https://github.com/al-mohad/nigerian_network_detector
+issue_tracker: https://github.com/al-mohad/nigerian_network_detector/issues
+
+topics:
+  - nigeria
+  - phone-number
+  - network-detection
+  - telecom
+  - validation
+
+environment:
+  sdk: ^3.11.4
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.6
