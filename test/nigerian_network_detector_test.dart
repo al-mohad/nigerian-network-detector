@@ -92,8 +92,7 @@ void main() {
         });
 
         test('strips mixed formatting', () {
-          final result =
-              NigerianNetworkDetector.detect('+234 (803) 123-4567');
+          final result = NigerianNetworkDetector.detect('+234 (803) 123-4567');
 
           expect(result.isValid, isTrue);
           expect(result.network, NigerianNetwork.mtn);

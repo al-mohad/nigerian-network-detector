@@ -99,12 +99,12 @@ class _HomeScreenState extends State<HomeScreen> {
       duration: const Duration(milliseconds: 300),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.5),
+        color: Theme.of(context).colorScheme.surfaceVariant.withValues(alpha: 0.5),
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
           color: isSuccess
-              ? Colors.green.withOpacity(0.5)
-              : Colors.red.withOpacity(0.5),
+              ? Colors.green.withValues(alpha: 0.5)
+              : Colors.red.withValues(alpha: 0.5),
           width: 2,
         ),
       ),

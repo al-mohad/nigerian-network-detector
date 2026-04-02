@@ -33,8 +33,16 @@ void main() {
 
   // ── Convenience methods ──────────────────────────────────────────────
   print('\n── Convenience methods ──');
-  print('isValid("08031234567"):          ${NigerianNetworkDetector.isValid("08031234567")}');
-  print('networkOf("09091234567"):        ${NigerianNetworkDetector.networkOf("09091234567")}');
-  print('normalize("+2348031234567"):     ${NigerianNetworkDetector.normalize("+2348031234567")}');
-  print('toInternational("08031234567"):  ${NigerianNetworkDetector.toInternational("08031234567")}');
+  print(
+    'isValid("08031234567"):          ${NigerianNetworkDetector.isValid("08031234567")}',
+  );
+  print(
+    'networkOf("09091234567"):        ${NigerianNetworkDetector.networkOf("09091234567")}',
+  );
+  print(
+    'normalize("+2348031234567"):     ${NigerianNetworkDetector.normalize("+2348031234567")}',
+  );
+  print(
+    'toInternational("08031234567"):  ${NigerianNetworkDetector.toInternational("08031234567")}',
+  );
 }

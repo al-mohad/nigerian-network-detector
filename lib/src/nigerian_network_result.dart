@@ -39,22 +39,18 @@ class NigerianNetworkResult {
     required String international,
     required String prefix,
   }) : this._(
-          isValid: true,
-          network: network,
-          normalized: normalized,
-          international: international,
-          prefix: prefix,
-        );
+         isValid: true,
+         network: network,
+         normalized: normalized,
+         international: international,
+         prefix: prefix,
+       );
 
   /// Creates a failed detection result with an [error] message.
   const NigerianNetworkResult.failure({
     required String error,
     String normalized = '',
-  }) : this._(
-          isValid: false,
-          normalized: normalized,
-          error: error,
-        );
+  }) : this._(isValid: false, normalized: normalized, error: error);
 
   /// Whether the input resolved to a valid Nigerian mobile number.
   final bool isValid;
@@ -90,14 +86,8 @@ class NigerianNetworkResult {
           error == other.error;
 
   @override
-  int get hashCode => Object.hash(
-        isValid,
-        network,
-        normalized,
-        international,
-        prefix,
-        error,
-      );
+  int get hashCode =>
+      Object.hash(isValid, network, normalized, international, prefix, error);
 
   @override
   String toString() {
